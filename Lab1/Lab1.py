@@ -18,18 +18,18 @@ from PyQt6 import (
 class UI(QtWidgets.QMainWindow):
     def __init__(self):
         super(UI, self).__init__()
-        uic.loadUi('Lab1.ui', self)
+        uic.loadUi('Lab1/Lab1.ui', self)
         self.show()
         self.setWindowTitle("Library Management System")
         self.pushButton.clicked.connect(self.handle_add_click)
-        self.ui.buttonBox.accepted.connect(self.handle_validation)
-        self.ui.buttonBox.rejected.connect(self.close)
+        self.buttonBox.accepted.connect(self.handle_validation)
+        self.buttonBox.rejected.connect(self.close)
     def handle_add_click(self):
         list1 = self.lineEdit_3.text()
         self.listWidget.addItems([list1])
         self.lineEdit_3.clear()
     def handle_validation(self):
-        
+        pass
 
 
 app = QtWidgets.QApplication(sys.argv)  # Create an instance of QtWidgets.QApplication
