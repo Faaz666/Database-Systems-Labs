@@ -256,6 +256,9 @@
      <string>Issuance</string>
     </property>
     <widget class="QCheckBox" name="checkBox">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -269,6 +272,9 @@
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_4">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>70</x>
@@ -305,6 +311,9 @@
      </property>
     </widget>
     <widget class="QDateEdit" name="dateEdit_2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>70</x>
