@@ -74,8 +74,8 @@ class UI(QtWidgets.QMainWindow):
 
             # Check if the user input and row data matches
             combo_match = selected_combo in {"", combo_compare.text()}  
-            title_match = selected_title in {"", title_compare.text()}   
-            issued_match =  (issued and issued_compare.text() == "True") or (not issued and issued_compare.text() == "False")
+            title_match = selected_title.lower() in title_compare.text().lower() if selected_title else True if selected_title == "" else False
+            issued_match = (issued and issued_compare.text() == "True") or (not issued and issued_compare.text() == "False")
             
             radio_match = False
             # Implement radio_match conditions below
